@@ -6,7 +6,9 @@
 -->
 <html>
   <head>
+    
     <title>BeBop ADA Pool</title>
+    <link rel="shortcut icon" type="image/png" href="images/FAicon.png">
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -28,8 +30,8 @@
         <p>
           The coolest Cardano Stake Pool, with great performance and
           reliability.<br />
-          built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for
-          <a href="https://html5up.net">HTML5 UP</a>.
+          <span style="font-size:12px;">built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for
+          <a href="https://html5up.net">HTML5 UP</a>.</span>
         </p>
       </header>
 
@@ -138,8 +140,15 @@
         <section id="second" class="main special">
           <header class="major">
             <h2>FAQ</h2>
-            <p>
-              <b>What is BeBop ADA Pool ?</b><br /><br />
+           
+          </header>
+
+      
+
+
+          <div class="toggle-set">
+            <button href="#" id="btn1" class="btn-primary" style=" background: #EEEEEE;" onclick="toggleTextBox(event)">What is BeBop ADA Pool ?</button>   
+            <div id="textBox1" class="text-box">
               <b>BeBop ADA Pool</b> is a Cardano ADA Staking Pool.<br />
               We are a friendly and passionate team that have developed a fully
               resilient, scalable and highly-secure cloud based platform which
@@ -150,55 +159,84 @@
               The team is experienced, committed and passionate about Cardano
               and strongly support the vision of 'fair financial services’ for
               all.
-            </p>
-          </header>
-          <ul class="statistics">
-            <li class="style1">
-              <span class="icon solid fa-code-branch"></span>
-              <strong>> 23,430</strong>GitHub commits
-            </li>
-            <li class="style2">
-              <span class="icon fa-folder-open"></span>
-              <strong>15</strong> Code releases
-            </li>
-            <li class="style3">
-              <span class="icon solid fa-signal"></span>
-              <strong> #8</strong> Top 10 Crypto
-            </li>
-            <li class="style4">
-              <span class="icon solid fa-laptop"></span>
-              <strong>490,032</strong> Community members
-            </li>
-            <li class="style5">
-              <span class="icon fa-gem"></span>
-              <strong>30+</strong> Exchange listings
-            </li>
-          </ul>
-          <p class="content"></p>
-          <p>
-            <b>What is Cardano?</b><br />
-            Cardano is a decentralised public blockchain and cryptocurrency
-            project that is fully open source. Cardano uses the ADA
-            cryptocurrency, which can be used to send and receive digital funds.
+            </div>
+          </div>
+        
+          
+          <div class="toggle-set">
+            <button href="#" id="btn2" class="btn-primary toggle-text-box" style=" background: #EEEEEE;" onclick="toggleTextBox(event)">What is Cardano?</button>   
+            <div id="textBox2" class="text-box">
+              Cardano is a decentralised public blockchain and cryptocurrency
+            project that is fully open source.<br/> Cardano uses the ADA
+            cryptocurrency, which can be used to send and receive digital funds.<br/>
             Cardano differentiates itself by being designed from the ‘ground up’
             to deliver a secure and sustainable ‘Proof of Stake’ blockchain that
             can protect user privacy whilst allowing for regulation.
-          </p>
-          <p>
-            <b> What is ADA?</b><br />
-            ADA is the cryptocurrency on the Cardano blockchain. Holders can
+            </div>
+          </div>
+
+          <div class="toggle-set" >
+            <button href="#" id="btn3" class="btn-primary toggle-text-box" style=" background: #EEEEEE;" onclick="toggleTextBox(event)">What is ADA?</button>   
+            <div id="textBox3" class="text-box">
+              ADA is the cryptocurrency on the Cardano blockchain. Holders can
             send value between friends, pay for a good or service, deposit funds
             on an exchange, or enter an application.
-          </p>
+            </div>
+          </div>
 
-          <p>
-            <b>Which wallets can be used for storing ADA?</b><br />
-            Cardano ADA uses the Daedalus and Yoroi wallets. Daedalus is a
-            secure, multi-platform wallet whilst Yoroi is a Chrome based
-            plug-in. Yoroi is also available on the iOS and Android platforms.
-            The wallets allows a user to send and receive ADA and view a history
-            of the transactions made.
-          </p>
+          <div class="toggle-set">
+            <button href="#" id="btn4" class="btn-primary toggle-text-box"  style=" background: #EEEEEE;" onclick="toggleTextBox(event)">Who is IOHK?</button>   
+            <div id="textBox4" class="text-box">
+              Founded in 2015 by Charles Hoskinson and Jeremy Wood, Input Output Hong Kong (IOHK, now IOG) is a world-class research engineering and technology company committed to using peer-to-peer innovations to provide financial services to three billion people that don’t have them. The group is contracted to design, build, and maintain Cardano through to 2020. 
+            </div>
+          </div>
+
+          <div class="toggle-set">
+            <button href="#" id="btn5" class="btn-primary toggle-text-box" style=" background: #EEEEEE;" onclick="toggleTextBox(event)">How do I stake ADA?</button>   
+            <div id="textBox5" class="text-box">
+              You can choose to stake to BeBop ADA Pool directly via the Daedalus and Yoroi wallets.
+                There is no risk to your ADA when staking, ADA does not leave your wallet and you remain in full control. 
+                
+            </div>
+          </div>
+          <div class="toggle-set">
+            <button href="#" id="btn6" class="btn-primary toggle-text-box"  style=" background: #EEEEEE;" onclick="toggleTextBox(event)">Who is The Cardano Foundation?</button>   
+            <div id="textBox6" class="text-box">
+              The Cardano Foundation acts as a supervisory and educational body for Cardano.<br/> The mission of Cardano Foundation is to standardise, protect and promote the Cardano Protocol and its applications. 
+              <br/>Also as a community hub offering authoritative,<br/> timely information about the technology and Cardano’s wide-ranging potential.<br/> To liaise and influence government and regulatory bodies, form strategic partnerships with businesses, enterprises and other open source projects and aid the creation of formal software standards for Cardano, a crucial feature for its long term success and critical in adoption and government engagement. The Cardano Foundation’s core mission is to standardise, protect and promote the Cardano Protocol technology.
+              
+                
+            </div>
+          </div>
+
+         <div style="width: 100%;height:160px; margin-top: 40px;">
+          <ul class="statistics">
+            <li class="style1" style="margin:10px;">
+              <span class="icon solid fa-code-branch"></span>
+              <strong>> 23,430</strong><b>GitHub commits</b>
+            </li>
+            <li class="style2" style="margin:10px;">
+              <span class="icon fa-folder-open"></span>
+              <strong>15</strong><b> Code releases</b>
+            </li>
+            <li class="style3" style="margin:10px;">
+              <span class="icon solid fa-signal"></span>
+              <strong> #8</strong> <b>Top 10 Crypto</b>
+            </li>
+            <li class="style4" style="margin:10px;">
+              <span class="icon solid fa-laptop"></span>
+              <strong>490,032</strong> <b>Community members</b>
+            </li>
+            <li class="style5" style="margin:10px;">
+              <span class="icon fa-gem"></span>
+              <strong>30+</strong> <b>Exchange listings</b>
+            </li>
+          </ul>
+        
+        </div>
+         
+
+       
 
           <footer class="major">
             <!-- <ul class="actions special">
@@ -211,13 +249,84 @@
         <section id="cta" class="main special">
           <header class="major">
             <h2>Get Started!</h2>
-            <p>
-              <b>Where can I buy or sell ADA?</b><br />
-              The Cardano project is listed on a number of exchanges. You can
-              buy, sell or trade ADA through these digital currency exchanges.
-              ADA is also currently available via a network of ATM machines in
-              Japan!
-            </p>
+            <div class="row gtr-150">
+              <div class="col-6 col-12-medium">
+                <div class="toggle-set" >
+                  <button href="#" id="btn7" class="btn-primary toggle-text-box"  style=" background: #EEEEEE;" onclick="toggleTextBox(event)">Where can I buy or sell ADA?</button>   
+                  <div id="textBox7" class="text-box" style="text-align: left;">
+                    The Cardano project is listed on a number of exchanges. You can
+                    buy, sell or trade ADA through these digital currency exchanges.<br/>
+                    ADA is also currently available via a network of ATM machines in
+                    Japan!<br/> Here a list of some of the official websites:
+
+                    <ul>
+                      <li><a target="_blank" href="https://www.coinbase.com/signup">coinbase.com/signup</a></li>
+                      <li><a target="_blank" href="https://accounts.binance.com/en/register?email=">binance.com/en/register</a></li>
+                      <li><a target="_blank" href="https://global.bittrex.com/account/register">global.bittrex.com/account/register</a></li>
+                      <li><a target="_blank" href="https://go.hex.com/">go.hex.com</a></li>
+                      <li><a target="_blank" href="https://crypto.com/en/index.html#">crypto.com</a></li>
+                    </ul>
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-12-medium">
+                <div class="toggle-set">
+                  <button href="#" id="btn8" class="btn-primary toggle-text-box"  style=" background: #EEEEEE;" onclick="toggleTextBox(event)">Which wallets can be used for storing ADA?</button>   
+                  <div id="textBox8" class="text-box" style="text-align: left;">
+                    Cardano ADA uses the Daedalus and Yoroi wallets. Daedalus is a
+                    secure, multi-platform wallet whilst Yoroi is a Chrome based
+                    plug-in. Yoroi is also available on the iOS and Android platforms.<br/>
+                    The wallets allows a user to send and receive ADA and view a history
+                    of the transactions made.<br/>  Here the links to the official websites:
+
+                    <ul>
+                      <li><a target="_blank" href="https://daedaluswallet.io/en/download/">daedaluswallet.io/download</a></li>
+                      <li><a target="_blank" href="https://yoroi-wallet.com/#/">yoroi-wallet.com</a></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+            
+         <!-- <hr/> -->
+
+            <div class="form-mailinglist" style="width: 450px; margin: 0 auto;">
+
+              <!-- Begin Mailchimp Signup Form -->
+<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	
+</style>
+<div id="mc_embed_signup">
+<form action="https://bebopadapool.us17.list-manage.com/subscribe/post?u=32041e47034dbfedcf0831d3a&amp;id=085ed8a3d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3> Subscribe for updates about Bebop ADA Pool and more.</h3>
+
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>   
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_32041e47034dbfedcf0831d3a_085ed8a3d0" tabindex="-1" value=""></div>
+    
+     <div class="clear wrapper" ><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="example-1" >
+    
+    </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';fnames[1]='MMERGE1';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
+<!--End mc_embed_signup-->
+            </div>
           </header>
           <footer class="major">
             <!-- <ul class="actions special">
@@ -291,5 +400,6 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/copytext.js"></script>
+    <script src="assets/js/toogleTextBox.js"></script>
   </body>
 </html>
