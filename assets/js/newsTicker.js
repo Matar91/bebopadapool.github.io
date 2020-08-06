@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
     e = 0, // Current element
     s = 200, // Animation speed
     p = 2500, // Delay
-    h = 37, // Line height
+    h = 35, // Line height
     sI;
 
   $slide.hover(function (el) {
