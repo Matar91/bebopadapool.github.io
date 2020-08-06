@@ -5,6 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+  
   <head>
     
     <title>BeBop ADA Pool</title>
@@ -15,13 +16,16 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
     <script src="https://kit.fontawesome.com/f0f3efa039.js" crossorigin="anonymous"></script>
   </head>
-  <body class="is-preload">
+  <body class="is-preload" onload="loadAPI();">
+    
     <!-- Wrapper -->
+
     <div id="wrapper">
       <!-- Header -->
       <header id="header" class="alt">
@@ -35,9 +39,117 @@
         </p>
       </header>
 
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Random stake pool ranking.</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Stake pool ranking is currently randomized.<br/><img src="https://www.cryptohub.it/wp-content/uploads/2019/01/daedalus-wallet.jpg" alt="" style="float:right;"> This issue will be resolved in an upcoming Daedalus release once historical data becomes available.<br/> Read More: <a target="_blank" href="https://iohk.zendesk.com/hc/en-us/articles/360038741393-Daedalus-Mainnet-Known-Issues">https://iohk.zendesk.com/hc/en-us/articles/360038741393-Daedalus-Mainnet-Known-Issues</a>
+          </div>
+        </div>
+      </div>
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <h2>Shelley rollout</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <img  src="https://aws1.discourse-cdn.com/business4/uploads/cardano/optimized/3X/f/3/f31f4f4e6aff0a4dd78629b639aa820b9a4da308_2_535x500.png" alt="">
+            The system takes a stake distribution snapshot at the beginning of every epoch (there is no delegated stake at the very start of epoch 0, of course, so the initial snapshot will be empty). After stake is delegated, it will be recorded in the next snapshot, and that snapshot will determine the leader schedule and rewards not for the epoch that is just starting, but for the one after that.<br/>
+            So, if you delegate in epoch 0, your delegation will be included in the stake snapshot that will be taken at the boundary between epochs 0 and 1. That snapshot will be used to determine the leader schedule and rewards for epoch 2, and so on. Here’s a pictorial view.
+          
+          </div>
+        </div>
+      </div>
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <h2>Another way to buy, trade, your ada</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            There is now another way to buy, trade, and exchange your ada as leading digital asset exchange Bitfinex lists ada trading pairs.<br/> Starting from 6 August 2020, you can enjoy support for ADA/BTC, ADA/USD, and ADA/USDT spot trading pairs and with more to come on Bitfinex.<br/> This important listing provides another on-ramp opportunity to purchase ada with fiat without first buying other cryptocurrency assets.<br/> <img src="https://www.criptovalute24.com/wp-content/uploads/2017/11/Bitfinex-Come-Funziona-Opinioni-Euro-Guida-Fees-Commissioni-1280x720.jpg" alt="">
+            Read more: https://cardanofoundation.org/en/news/bitfinex-lists-ada-trading-pairs-following-the-decentralization-of-cardano/
+          </div>
+        </div>
+      </div>
+     
+      <div id="popup4" class="overlay">
+        <div class="popup">
+          <h2>Daedalus 2.0.1 - Release Notes</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Some pools were not displayed in Daedalus, due to issues with fetching off-chain stake pool information (ticker symbol, name, website link, and description).<br/> Since this information is hosted by each stake pool, it needs to be fetched from numerous sources. This makes the process prone to error. This issue is now resolved.<br/>
+            <img src="https://iohk.zendesk.com/hc/article_attachments/900002780463/image3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- <div id="popup5" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            5
+          </div>
+        </div>
+      </div> -->
+
+
+     
+
+  
+      <div id="ticker-container">
+        <div id="ticker-label">
+          LATEST NEWS:
+        </div>
+        
+       
+          <ul id="ticker-content">
+            <li data-elem="1" title="Long title">
+              <a href="#popup1">
+                <b>1: Random stake pool ranking.</b> Stake pool ranking is currently randomized. This issue will be resolved in an upcoming Daedalus release once historical data becomes available. Read More: https://iohk.zendesk.com/hc/en-us/articles/360038741393-Daedalus-Mainnet-Known-Issues
+              </a>
+            </li>
+           
+            <li data-elem="2">
+              <a href="#popup2">
+                <b>2: Shelley rollout.</b>   The system takes a stake distribution snapshot at the beginning of every epoch (there is no delegated stake at the very start of epoch 0, of course, so the initial snapshot will be empty). After stake is delegated, it will be recorded in the next snapshot, and that snapshot will determine the leader schedule and rewards not for the epoch that is just starting, but for the one after that.
+              </a>
+            </li>
+            <li data-elem="3">
+              <a href="#popup3">
+                <b>3: Another way to buy, trade, your ada</b>  There is now another way to buy, trade, and exchange your ada as leading digital asset exchange Bitfinex lists ada trading pairs. Starting from 6 August 2020, you can enjoy support for ADA/BTC, ADA/USD, and ADA/USDT spot trading pairs and with more to come on Bitfinex.
+              </a>
+            </li>
+            <li data-elem="4">
+              <a href="#popup4">
+                <b>4: Daedalus 2.0.1 - Release Notes.</b>  Some pools were not displayed in Daedalus, due to issues with fetching off-chain stake pool information (ticker symbol, name, website link, and description).
+              </a>
+            </li>
+            <!-- <li data-elem="5">
+              <a href="#popup5">
+                <b>5: Distinctio repellendus ut est.</b> Et rerum excepturi ea rerum similique quas sed. Aliquid recusandae ut aliquam ipsam. Sit suscipit earum ex est quibusdam unde. Nostrum similique ullam tempore ut est dolorem sit. Ut delectus perspiciatis dolores suscipit nisi eos quo.
+              </a>
+            </li> -->
+          </ul>
+      </div>
+
+<!-- 
+      <div id="cardano-info" >
+        <div id="cardano-info-label"  >
+          Epoch: 209
+        </div>
+        <div id="cardano-info-label" >
+          Total Staked: 6.54b (20.6%)
+        </div>
+        <div id="cardano-info-label" >
+          Active Pools: 808
+        </div>
+      </div> -->
+    
+    
+
       <!-- Nav -->
       <nav id="nav">
         <ul>
+         
           <li><a href="#intro" class="active">Introduction</a></li>
           <li><a href="#first">About The Pool</a></li>
           <li><a href="#second">FAQ</a></li>
@@ -47,6 +159,10 @@
 
       <!-- Main -->
       <div id="main">
+
+
+        
+
         <!-- Introduction -->
         <section id="intro" class="main">
           <div class="spotlight">
@@ -98,10 +214,10 @@
              
               <h3><b>Specifications</b></h3>
               <p style="text-align: left;">
-                Configuration: 1  server (planning to move to a 3 servers configuration).<br />
-                Server 1 Location: Frankfurt am Main  <img src="images/icon_Germany.png" style="width: 20px;"
-                  /><br />
-                Server 1 specs: OS Ubuntu 20.4(LTS) x64,  8 vCPUs, 16GB Memory / 100GB SSD Disk
+                <span class="specs-label">Configuration:</span> <span class="specs-text">1  server (planning to move to a 3 servers configuration).</span><br />
+                <span class="specs-label">Server 1 Location:</span>  <span class="specs-text">Frankfurt am Main  <img src="images/icon_Germany.png" style="width: 20px;"
+                  /></span><br />
+                  <span class="specs-label">Server 1 specs:</span> <span class="specs-text"> OS Ubuntu 20.4(LTS) x64,  8 vCPUs, 16GB Memory / 100GB SSD Disk</span>
               </p>
             </li>
             <li>
@@ -388,6 +504,10 @@
           &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
         </p>
       </footer>
+
+
+
+
     </div>
 
     <!-- Scripts -->
@@ -401,5 +521,8 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/copytext.js"></script>
     <script src="assets/js/toogleTextBox.js"></script>
+    <script src="assets/js/newsTicker.js"></script>
+    <script src="assets/js/loadAPI.js"></script>
+  
   </body>
 </html>
