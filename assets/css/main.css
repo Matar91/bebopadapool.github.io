@@ -3038,7 +3038,10 @@ table.alt tbody tr td {
 @media screen and (max-width: 980px) {
   .statistics li strong,
   .statistics li b {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+  .statistics li {
+    margin: 0 !important;
   }
 }
 
@@ -3047,7 +3050,9 @@ table.alt tbody tr td {
     display: block;
     width: 20em;
     max-width: 100%;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 1em auto;
+
+    overflow: scroll;
   }
 
   .statistics li:first-child {
@@ -3061,12 +3066,12 @@ table.alt tbody tr td {
   }
 
   .statistics li .icon:before {
-    font-size: 3.75rem;
+    font-size: 1.5em;
   }
 
   .statistics li strong,
   .statistics li b {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
 
