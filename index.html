@@ -38,20 +38,78 @@
       <header id="header" class="alt">
         <span class="logo"><img src="images/logo.svg" alt="" /></span>
         <h1>BeBop ADA Pool</h1>
+        <h2>and</h2>
+        <h1>Bcool ADA Pool</h1>
         <p>
          
-          The coolest Cardano Stake Pool, with great performance and
+          The coolest Cardano Stake Pools, with great performance and
           reliability.<br />
 
           <p style="font-size: 16px;">  Special thanks go to the authors of the <a target="_blank" href="https://www.coincashew.com/"><b>CoinCashew</b></a> guide, to Lauris of  <a target="_blank" href="https://www.stakepool247.eu/"><b> Stakepool247</b></a>, to Antonie from <a target="_blank" href="https://cointourage.com/"><b> CoinTourage</b></a>, to the operator of <a target="_blank" href="https://www.garden-pool.com/"><b>EDEN Garden Pool</b></a><br/>  and many other stake pool operators<br/> without which help we could not have been operational in a such short time and in such an efficient way, thanks again.</p>
         
          
         </p>
-
-
-
-        
+ 
       </header>
+
+      <!-- Important Messages -->
+
+      <div id="popup0" class="overlay">
+        <div class="popup">
+          <div class="bigshot">
+            <div class="bishotImg__container">
+                 <img style=""  src="./images/bigshot.gif" alt="">
+            </div>
+          </div>
+          <h2>Early epochs, what you should know.</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <b style="color: rgb(78, 78, 78); font-weight: 600;">About the "d" parameter</b><br/>
+           
+
+            During the early epochs of the new Shelley era, a variable will affect the outcome of block production by independent pools.<br/>
+            
+            What the d parameter represent is the proportion of the block that are made by the stake pool operators (such as BeBop), not the OBFT protocol managed by IOHK.<br/>
+            Right now the network is operating in a static and federated mode, so these IOHK’s OBFT pools are operating at for no profit whats so ever, just making blocks and upholding the network.<br/>
+            <br/>
+            Now that the hard fork is done, all the logic is in place to turn on Ouroboros Praos, which is what Shelly is running under.<br/> This is accomplished by setting d parameter to something less than 1, which means a percentage of blocks will be made by the Stake Pool Operators (SPO), instead of the OBFT nodes.<br/>
+            There are three phases to this and is determined by the value of d parameter.
+            In the image below you can find the steps to bring down the value of d parameter towards 0.<br/>
+            <br/>
+            <img style="margin: 10px;" src="images/decay.jpg" />
+            <br/>
+            <b style="font-style:italic;color: grey; font-weight: 600;">All this will translate into lower rewards for the pools, and consequently for the delegators, especially in the initial phase. However, this situation should improve as the epochs pass.</b> <br/>
+            <br/>
+            We will have a new variable (let’s call it alpha α) that will act as a constant decay rate of the d parameter. Every epoch (where 1 epoch is 5 days), the value of d will decrement by the value of α marching towards 0.<br/>
+            For a more detailed explanation here is a video by Charles Hoskinson discussing this topic: <a target="_blank" href="https://www.youtube.com/watch?v=xiDHg-Ql2hU&t=8s">https://www.youtube.com/watch?v=xiDHg-Ql2hU&t=8s</a>
+           
+          </div>
+          <div class="content-img"> <img src="https://preview.redd.it/y6oql85jchf51.png?width=479&format=png&auto=webp&s=486565084cbcd519627ed936f02b8c39d3a8d786" alt=""></div>
+          <div class="content-img"> <img src="https://preview.redd.it/pe3lrrkmchf51.png?width=875&format=png&auto=webp&s=f668e6cc2488c7fa21112faced156bd287318e88" alt=""></div>
+        </div>  
+      </div>
+
+      <div id="ticker-important-container">
+        <div id="ticker-label">
+          WHAT YOU SHOULD KNOW:
+        </div>
+        <div id="ticker-link">
+          <i class="fas fa-hand-point-left"></i> click to see more
+        </div>
+       
+          <ul id="ticker-important-content">
+            <li data-elem="1" title="Long title" style="height: 35px;">
+              <a href="#popup0">
+                <b>Are you a delegator ?</b>  Here some considerations for the next weeks..
+             
+              </a>
+            </li>
+          
+          </ul>
+      </div>
+
+      <!-- Latest News -->
+
 
       <div id="popup1" class="overlay">
         <div class="popup">
@@ -77,8 +135,7 @@
           <div class="content-img"> <img src="https://pbs.twimg.com/media/EfIKPTSU8AA-0QC?format=jpg&name=large" alt=""></div>
         </div>
      
-      </div>
-      
+      </div>     
 
       <div id="popup2" class="overlay">
         <div class="popup">
@@ -293,39 +350,75 @@
         <!-- First Section -->
         <section id="first" class="main special">
           <header class="major">
-            <h2>ABOUT THE POOL</h2>
+            <h2>ABOUT THE POOLS</h2>
+            <p>We value the responsibility that comes with delegation and
+              maximising our community’s rewards,<br /> whilst securing the
+              integrity of Cardano’s network.</p>
           </header>
+
+           <!--BEBOP-->
+           <hr >
+
           <header class="major">
             <h3>POOL TICKER: <b>BEBOP</b><br/>  POOL ID:<div style="display: inline; margin-left: 10px; width: 300px;cursor: pointer;" ><input style="display: inline; width: 200px;" type="text" value="95ef4e541a1e89b38ffefe125060ff441b03c0d77dbfaff656bd1d64" id="myInput" readonly><div style="display: inline; margin-left: 10px; width: 50px; height: 50px; border: 1px solid #DDDDDD; border-radius: 3px;" onclick="copytext()"><div style="display: inline;"><i class="fa fa-clipboard fa-lg" aria-hidden="true"></i></div></div>
             </div ></h3>
           </header>
-          <ul class="features">
-            <li>
+          <div class="about-pools-row">
+            <div class="about-pools-specs">
+              <div class="about-subtitle-specs">
               <span style="font-size: 48px; color: #E8A823;">
                 <i class="fas fa-server fa-lg"></i>
               </span>
+              <h2><b>Specifications</b></h2>
+              </div>
              
-              <h3><b>Specifications</b></h3>
               <p style="text-align: left;">
-                <span class="specs-label">Configuration:</span> <span class="specs-text">1  server (planning to move to a 3 servers configuration).</span><br />
-                <span class="specs-label">Server 1 Location:</span>  <span class="specs-text">Frankfurt am Main  <img src="images/icon_Germany.png" style="width: 20px;"
-                  /></span><br />
-                  <span class="specs-label">Server 1 specs:</span> <span class="specs-text"> OS Ubuntu 20.4(LTS) x64,  8 vCPUs, 16GB Memory / 100GB SSD Disk</span>
+                <div class="specs-row">
+                <div class="specs-label">Configuration</div> <div class="specs-text"> : 3  servers (2 relays and 1 core node).</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">Server 1 specs</div> <div class="specs-text"> :  OS Ubuntu 20.4(LTS) x64, 8 vCPUs, 16GB Memory / 100GB SSD Disk</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">Server 1 Location</div> <div class="specs-text"> : Frankfurt am Main  <img src="images/icon_Germany.png" style="width: 20px;"
+                  /></div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">Server 2 specs</div> <div class="specs-text"> :  OS Ubuntu 20.4(LTS) x64, 4 vCPUs, 8GB Memory / 160GB SSD Disk</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">Server 2 Location</div> <div class="specs-text"> : Toronto  <img src="images/icon_Canada.png" style="width: 22px;"
+                    /></div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-label">Server 3 specs</div> <div class="specs-text"> :  OS Ubuntu 20.4(LTS) x64, 4 vCPUs, 8GB Memory / 160GB SSD Disk</div>
+                </div>
+                <div class="specs-row">
+                     <div class="specs-label">Server 3 Location</div> <div class="specs-text"> : London  <img src="images/icon_UK.png" style="width: 22px;"
+                  /></div>
+                </div>
               </p>
-            </li>
-            <li>
-              <span style="font-size: 48px; color: #8CC9F0;">
+            </div>
+            <div class="about-pools-fees">
+              <div class="about-subtitle-fees">
+               <span style="font-size: 48px; color: #8CC9F0;">
                 <i class="fas fa-money-check-alt fa-lg"></i>
-              </span>
-            
+               </span>
               <h3><b>Low Fees / High Returns</b></h3>
+              </div>
               <p style="text-align: left; margin-left: 20px;">
-                <span id="fixFee" class="specs-label">Fixed fee (per epoch): </span><span class="specs-text "> 345 </span><br />
-                <span id="percFee" class="specs-label">Percentage fee: </span><span class="specs-text "> 0,1%</span><br />
-                <span id="pledge" class="specs-label">Pledge:</span><span class="specs-text "> 100k</span><br />
+                <div class="fees-row">
+                  <span id="fixFee" class="fee-label">Fixed fee  </span> <span class="fees-text "> :  345 </span>
+                </div>
+                <div class="fees-row">
+                  <span id="percFee" class="fee-label">Percentage fee </span> <span class="fees-text "> :  0,1%</span>
+                </div>
+                <div class="fees-row">
+                 <span id="pledge" class="fee-label">Pledge</span> <span class="fees-text "> :  100k</span>
+                </div>
               </p>
-            </li>
-            <li>
+            </div>
+            <!-- <div class="about-pools-row">
               <span style="font-size: 48px; color: #615195;">
                 <i class="fas fa-hands-helping fa-lg"></i>
               </span>
@@ -336,8 +429,86 @@
                 maximising our community’s rewards,<br /> whilst securing the
                 integrity of Cardano’s network.</span>
               </p>
-            </li>
-          </ul>
+            </div> -->
+          </div>
+
+          <!--BCOOL-->
+          <hr>
+          
+          <header class="major">
+            <h3>POOL TICKER: <b>BCOOL</b><br/>  POOL ID:<div style="display: inline; margin-left: 10px; width: 300px;cursor: pointer;" ><input style="display: inline; width: 200px;" type="text" value="85e055f4c777392bd43a8d8c40aad6b3e67b1f23faf4c24d12f4c5f4" id="myInput" readonly><div style="display: inline; margin-left: 10px; width: 50px; height: 50px; border: 1px solid #DDDDDD; border-radius: 3px;" onclick="copytext()"><div style="display: inline;"><i class="fa fa-clipboard fa-lg" aria-hidden="true"></i></div></div>
+            </div ></h3>
+          </header>
+          <div class="about-pools-row">
+            <div class="about-pools-specs">
+              <div class="about-subtitle-specs">
+              <span style="font-size: 48px; color: #E8A823;">
+                <i class="fas fa-server fa-lg"></i>
+              </span>
+              <h2><b>Specifications</b></h2>
+              </div>
+             
+              <p style="text-align: left;">
+                <div class="specs-row">
+                <div class="specs-label">Configuration</div> <div class="specs-text"> : 3  servers (2 relays and 1 core node).</div>
+                </div>
+                
+                <div class="specs-row">
+                  <div class="specs-label">Server 1 specs</div> <div class="specs-text"> :  OS Ubuntu 20.4(LTS) x64, 4 vCPUs, 8GB Memory / 160GB SSD Disk</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">Server 1 Location</div> <div class="specs-text"> : Frankfurt am Main  <img src="images/icon_Germany.png" style="width: 20px;"
+                  /></div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-label">Server 2 specs</div> <div class="specs-text"> :  OS Ubuntu 20.4(LTS) x64, 2 vCPUs, 4GB Memory / 80GB SSD Disk</div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-label">Server 2 Location</div> <div class="specs-text"> : Amsterdam  <img src="images/icon_Neth.png" style="width: 22px;"
+                      /></div>
+                </div>
+                <div class="specs-row">
+                   <div class="specs-label">Server 3 specs</div> <div class="specs-text"> :  OS Ubuntu 20.4(LTS) x64, 2 vCPUs, 4GB Memory / 80GB SSD Disk</div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-label">Server 3 Location</div> <div class="specs-text"> : Toronto  <img src="images/icon_Canada.png" style="width: 22px;"
+                 /></div>
+                </div>
+              </p>
+            </div>
+            <div class="about-pools-fees">
+              <div class="about-subtitle-fees">
+               <span style="font-size: 48px; color: #8CC9F0;">
+                <i class="fas fa-money-check-alt fa-lg"></i>
+               </span>
+               <h3><b>Low Fees / High Returns</b></h3>
+              </div>
+              <p style="text-align: left; margin-left: 20px;">
+                <div class="fees-row">
+                  <span id="fixFee" class="fee-label">Fixed fee  </span> <span class="fees-text "> :  345 </span>
+                </div>
+                <div class="fees-row">
+                  <span id="percFee" class="fee-label">Percentage fee </span> <span class="fees-text "> :  0,1%</span>
+                </div>
+                <div class="fees-row">
+                 <span id="pledge" class="fee-label">Pledge</span> <span class="fees-text "> :  10k</span>
+                </div>
+              </p>
+            </div>
+            <!-- <div class="about-pools-row">
+              <span style="font-size: 48px; color: #615195;">
+                <i class="fas fa-hands-helping fa-lg"></i>
+              </span>
+             
+              <h3><b>Reliability</b></h3>
+              <p style="text-align: left;">
+                <span class="specs-label">We value the responsibility that comes with delegation and
+                maximising our community’s rewards,<br /> whilst securing the
+                integrity of Cardano’s network.</span>
+              </p>
+            </div> -->
+          </div>
+         
           <footer class="major">
             <!-- <ul class="actions special">
               <li><a href="generic.html" class="button">Learn More</a></li>
