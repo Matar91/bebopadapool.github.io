@@ -29,5 +29,5 @@ jQuery(document).ready(function ($) {
     }
 
     loop();
-  }, 1000);
+  }, 1500);
 });

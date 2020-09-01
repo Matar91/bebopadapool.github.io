@@ -3,11 +3,6 @@ function loadAPI() {
   fetch("https://api.coingecko.com/api/v3/coins/cardano/status_updates")
     .then((response) => response.json())
     .then((data) => {
-      //convert to array
-      // for (var i in data) dataArray.push([i, data[i]]);
-
-      // let filtered = dataArray.filter((dataRow) => dataRow[0] === poolID);
-
       let popup = document.getElementById("popup_container");
       let ticker = document.getElementById("ticker-content");
 
@@ -60,7 +55,5 @@ function loadAPI() {
       popup.innerHTML = popup_content;
 
       ticker.innerHTML = ticker_content;
-
-      console.log(data);
     });
 }
