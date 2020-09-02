@@ -1,5 +1,13 @@
-function loadAPI() {
+function fetchNews() {
   let dataArray = [];
+
+  function urlify(text) {
+    var urlRegex = /(https?:\/\/[^\s]+)/g;
+    return text.replace(urlRegex, function (url) {
+      return '<a target="_blank" href="' + url + '">' + url + "</a>";
+    });
+  }
+
   fetch("https://api.coingecko.com/api/v3/coins/cardano/status_updates")
     .then((response) => response.json())
     .then((data) => {
@@ -25,7 +33,7 @@ function loadAPI() {
           `</h2>
           <a class="close" href="#">&times;</a>
           <div class="content">` +
-          data.status_updates[i].description +
+          urlify(data.status_updates[i].description) +
           `
           </div>
         </div>
