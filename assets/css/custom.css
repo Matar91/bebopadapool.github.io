@@ -365,7 +365,7 @@
   }
 
   .about-pools-specs {
-    width: 500px;
+    width: 400px;
   }
 
   .about-pools-fees {
@@ -408,8 +408,8 @@
 }
 
 .about-pools-specs {
-  max-width: 70%;
-  font-size: 16px;
+  max-width: 60%;
+  font-size: 14px;
 
   float: left;
 }
