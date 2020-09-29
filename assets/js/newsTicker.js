@@ -1,6 +1,9 @@
 jQuery(document).ready(function ($) {
   setTimeout(function () {
     var $slide = jQuery("#ticker-content li");
+    var $nextBtn = jQuery("#ticker-next-btn");
+
+    var delay = 0;
     var c = $slide.length, // Element count
       e = 0, // Current element
       s = 200, // Animation speed
@@ -9,7 +12,12 @@ jQuery(document).ready(function ($) {
       sI;
 
     $slide.hover(function (el) {
+      console.log(el);
       return el.type.match("t") ? clearInterval(sI) : loop();
+    });
+
+    $nextBtn.click(function () {
+      anim(e++);
     });
 
     function anim(elem) {
