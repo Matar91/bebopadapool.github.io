@@ -135,7 +135,12 @@
   text-decoration: underline;
 }
 
-#ticker-link {
+#ticker-next-btn {
+  cursor: pointer;
+}
+
+#ticker-link,
+#ticker-next-btn {
   float: right;
   z-index: 10;
 
