@@ -2,5 +2,6 @@
   "name": "BCOLL ADA Pool",
   "description": "Easy come, Easy go...",
   "ticker": "BCOOL",
-  "homepage": "https://bebopadapool.com"
+  "homepage": "https://bebopadapool.com",
+  "extended": "https://bebopadapool.com/extended-bcool.json"
 }
