@@ -2,5 +2,6 @@
   "name": "BeBop ADA Pool",
   "description": "See you space cowboy...",
   "ticker": "BEBOP",
-  "homepage": "https://bebopadapool.com"
+  "homepage": "https://bebopadapool.com",
+  "extended": "https://bebopadapool.com/extended-bebop.json"
 }
