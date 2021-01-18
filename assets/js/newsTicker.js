@@ -6,9 +6,9 @@ jQuery(document).ready(function ($) {
     var delay = 0;
     var c = $slide.length, // Element count
       e = 0, // Current element
-      s = 200, // Animation speed
-      p = 2500, // Delay
-      h = 35, // Line height
+      s = 400, // Animation speed
+      p = 3000, // Delay
+      h = 135, // Line height
       sI;
 
     $slide.hover(function (el) {

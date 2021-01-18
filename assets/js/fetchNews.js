@@ -42,7 +42,7 @@ function fetchNews() {
         ticker_content +=
           `<li data-elem="` +
           i +
-          `" title="Long title" style="height: 35px;">
+          `"  style="height: 135px;">
               <a href="#popup` +
           i +
           `">
